@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_393513_needit_needit">x_393513_needit_needit</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix>NEE</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>madhu</sys_created_by>
+        <sys_created_on>2019-08-19 17:51:01</sys_created_on>
+        <sys_id>3c588c7edb9b3300d5e21fc768961999</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>NEE</sys_name>
+        <sys_package display_value="Needit" source="x_393513_needit">5de7ccf6db9b3300d5e21fc76896198e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Needit">5de7ccf6db9b3300d5e21fc76896198e</sys_scope>
+        <sys_update_name>sys_number_3c588c7edb9b3300d5e21fc768961999</sys_update_name>
+        <sys_updated_by>madhu</sys_updated_by>
+        <sys_updated_on>2019-08-19 17:51:01</sys_updated_on>
+    </sys_number>
+</record_update>
