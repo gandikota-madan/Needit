@@ -61,6 +61,8 @@
             <sys_updated_by>madhu</sys_updated_by>
             <sys_updated_on>2019-08-19 19:39:51</sys_updated_on>
             <sys_user/>
+            <u_reference_1/>
+            <u_string_2/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>
         </sys_ui_form>

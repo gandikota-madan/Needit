@@ -3,10 +3,10 @@
         <abort_action>false</abort_action>
         <access>package_private</access>
         <action_delete>false</action_delete>
-        <action_insert>true</action_insert>
+        <action_insert>false</action_insert>
         <action_query>false</action_query>
-        <action_update>false</action_update>
-        <active>true</active>
+        <action_update>true</action_update>
+        <active>false</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
         <change_fields>false</change_fields>
@@ -29,20 +29,38 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
-	/*
+
 	// Add your code here
 	// rightnow stores the current time
 	var rightnow = new GlideDateTime();
 	// Create a GlideDateTime object for the When needed date
-	var whenNeeded = new GlideDateTime(current.u_when_needed);
+	var whenNeeded = new GlideDateTime(current.closed_at);
+	gs.addInfoMessage(whenNeeded);
+	
+	
+	gs.addInfoMessage(rightnow.getValue());
+	//var gtime1 = new GlideTime();
+	//gs.addInfoMessage(gtime1.getByFormat('hh:mm:ss'));
+	//gtime1.setValue("5:00:00");
+	//rightnow.add(gtime1);
+	//var gtime2 = rightnow.getTime();
+	//gs.addInfoMessage(gtime2);
+	//gs.addInfoMessage(gtime2.getByFormat('hh:mm:ss'));
+	//rightnow.addDaysLocalTime(2);
+	gs.addInfoMessage(whenNeeded);
+	
 	
 	// If the When needed date is before rightnow, do not write the record to the database
 	// Output an error message to the screen
-	if(whenNeeded.before(rightnow)){
+var a =(whenNeeded.compareTo(rightnow));
+	gs.addInfoMessage(a);
+	/*{
 		gs.addErrorMessage("When needed date cannot be in the past.  Your request has not been saved to the database.");
 		current.setAbortAction(true);
 	}
 	*/
+	
+	/*
 	
 	// Instantiate the NeedItUtils class.  Call the isDatePast method and pass 
 	// the u_when_needed value.
@@ -54,7 +72,7 @@
 		gs.addErrorMessage("When needed date cannot be in the past.  Your request has not been saved to the database.");
 		current.setAbortAction(true);
 	}
-	
+	*/
 	
 	/*
 	// Challenge:  Do not allow same-day requests
@@ -67,7 +85,7 @@
 		current.setAbortAction(true);
 	}
 	*/
-	
+	/*
 	
 	
 	function isDateToday(strDate){
@@ -78,7 +96,7 @@
 		// Get the date portion of rightnow and testdate (no timestamp)
 		var today = rightnow.getLocalDate();
 		var istoday = testdate.getLocalDate();
-	
+	     gs.addInfoMessage(rightnow);
 		// Compare today and istoday to see if they are the same day
 		if(today.compareTo(istoday) == 0){
 			return true;
@@ -96,7 +114,7 @@
 		current.setAbortAction(true);
 	}
 	
-		
+		*/
 	
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
@@ -105,7 +123,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>326489a3db133300d5e21fc76896199b</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>53</sys_mod_count>
         <sys_name>Needit When needed field date</sys_name>
         <sys_overrides/>
         <sys_package display_value="Needit" source="x_393513_needit">5de7ccf6db9b3300d5e21fc76896198e</sys_package>
@@ -113,7 +131,7 @@
         <sys_scope display_value="Needit">5de7ccf6db9b3300d5e21fc76896198e</sys_scope>
         <sys_update_name>sys_script_326489a3db133300d5e21fc76896199b</sys_update_name>
         <sys_updated_by>madhu</sys_updated_by>
-        <sys_updated_on>2019-08-22 13:14:59</sys_updated_on>
+        <sys_updated_on>2019-10-23 08:55:56</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

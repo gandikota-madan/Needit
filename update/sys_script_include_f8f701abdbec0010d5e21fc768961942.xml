@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_393513_needit.whenNeededDate</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>whenNeededDate</name>
+        <script><![CDATA[var whenNeededDate = Class.create();
+whenNeededDate.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+isDatePast : function() {
+var right= new GlideDate();
+var start = this.getParameter('sysparm_date'); //Passing the start date from the client
+if (start >= right ) {
+			return true;
+}
+else {
+		return false;
+	}
+},
+    type: 'whenNeededDate'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>madhu</sys_created_by>
+        <sys_created_on>2019-10-23 09:52:12</sys_created_on>
+        <sys_id>f8f701abdbec0010d5e21fc768961942</sys_id>
+        <sys_mod_count>45</sys_mod_count>
+        <sys_name>whenNeededDate</sys_name>
+        <sys_package display_value="Needit" source="x_393513_needit">5de7ccf6db9b3300d5e21fc76896198e</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Needit">5de7ccf6db9b3300d5e21fc76896198e</sys_scope>
+        <sys_update_name>sys_script_include_f8f701abdbec0010d5e21fc768961942</sys_update_name>
+        <sys_updated_by>madhu</sys_updated_by>
+        <sys_updated_on>2019-10-23 13:14:08</sys_updated_on>
+    </sys_script_include>
+</record_update>

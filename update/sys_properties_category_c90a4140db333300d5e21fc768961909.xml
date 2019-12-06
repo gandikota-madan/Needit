@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category">
+    <sys_properties_category action="INSERT_OR_UPDATE">
+        <name>Needit Properties</name>
+        <sys_class_name>sys_properties_category</sys_class_name>
+        <sys_created_by>madhu</sys_created_by>
+        <sys_created_on>2019-09-05 06:14:46</sys_created_on>
+        <sys_id>c90a4140db333300d5e21fc768961909</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Needit Properties</sys_name>
+        <sys_package display_value="Needit" source="x_393513_needit">5de7ccf6db9b3300d5e21fc76896198e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Needit">5de7ccf6db9b3300d5e21fc76896198e</sys_scope>
+        <sys_update_name>sys_properties_category_c90a4140db333300d5e21fc768961909</sys_update_name>
+        <sys_updated_by>madhu</sys_updated_by>
+        <sys_updated_on>2019-09-05 06:17:42</sys_updated_on>
+        <title><![CDATA[<p><span style="font-size: 14pt;"><strong>NeedIt Application Properties</strong></span> </p>
+<p>This properties can be read and updated by the user with admin role: x_393513_needit.admin.</p>]]></title>
+    </sys_properties_category>
+    <sys_translated_text action="delete_multiple" query="documentkey=c90a4140db333300d5e21fc768961909"/>
+</record_update>

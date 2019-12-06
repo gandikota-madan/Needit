@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_definition">
+    <sys_ws_definition action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <base_uri>/api/x_393513_needit/needit_api</base_uri>
+        <consumes>application/json</consumes>
+        <consumes_customized>true</consumes_customized>
+        <default_version>No active default version</default_version>
+        <doc_link>x_393513_needit_needit_api_documentation.do</doc_link>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <is_versioned>false</is_versioned>
+        <name>NeedIt API</name>
+        <namespace>x_393513_needit</namespace>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <service_id>needit_api</service_id>
+        <short_description>Find the NeedIt active NeedIt records for a user. Group by What needed.</short_description>
+        <sys_class_name>sys_ws_definition</sys_class_name>
+        <sys_created_by>madhu</sys_created_by>
+        <sys_created_on>2019-11-13 10:03:53</sys_created_on>
+        <sys_id>9a169992dbc10010d5e21fc768961993</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>NeedIt API</sys_name>
+        <sys_package display_value="Needit" source="x_393513_needit">5de7ccf6db9b3300d5e21fc76896198e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Needit">5de7ccf6db9b3300d5e21fc76896198e</sys_scope>
+        <sys_update_name>sys_ws_definition_9a169992dbc10010d5e21fc768961993</sys_update_name>
+        <sys_updated_by>madhu</sys_updated_by>
+        <sys_updated_on>2019-11-13 11:20:52</sys_updated_on>
+    </sys_ws_definition>
+</record_update>
