@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>clientscript on submit</description>
+        <field>active</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages>submit client script</messages>
+        <name>submit</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+   //Type appropriate comment here, and begin script below
+   alert("thank u for submitting");
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-11 17:40:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1cea0fdf2fa580104b71309cf699b651</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>submit</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Needit" source="x_393513_needit">5de7ccf6db9b3300d5e21fc76896198e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Needit">5de7ccf6db9b3300d5e21fc76896198e</sys_scope>
+        <sys_update_name>sys_script_client_1cea0fdf2fa580104b71309cf699b651</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-11 17:40:39</sys_updated_on>
+        <table>incident</table>
+        <type>onSubmit</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Needit">5de7ccf6db9b3300d5e21fc76896198e</application>
+        <file_path/>
+        <instance_id>374dbff4dbe4734042b321c4059619bb</instance_id>
+        <instance_name>dev77944</instance_name>
+        <name>sys_script_client_1cea0fdf2fa580104b71309cf699b651</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description&gt;clientscript on submit&lt;/description&gt;&lt;field&gt;active&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages&gt;submit client script&lt;/messages&gt;&lt;name&gt;submit&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onSubmit() {
+   //Type appropriate comment here, and begin script below
+   alert("thank u for submitting");
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-12-11 17:40:39&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;1cea0fdf2fa580104b71309cf699b651&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;submit&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Needit" source="x_393513_needit"&gt;5de7ccf6db9b3300d5e21fc76896198e&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Needit"&gt;5de7ccf6db9b3300d5e21fc76896198e&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_1cea0fdf2fa580104b71309cf699b651&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-12-11 17:40:39&lt;/sys_updated_on&gt;&lt;table&gt;incident&lt;/table&gt;&lt;type&gt;onSubmit&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1516278095</payload_hash>
+        <record_name>submit</record_name>
+        <reverted_from/>
+        <source>815eb3252fa9c0104b71309cf699b624</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-11 17:40:39</sys_created_on>
+        <sys_id>9c3b03132fe580104b71309cf699b697</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16ef60c6a970000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-11 17:40:39</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>983b4b5f8ba58010667a21348d172530</update_guid>
+        <update_guid_history>983b4b5f8ba58010667a21348d172530:-1516278095</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-11 18:22:12</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>34124b8d7ae543b29bf8126eae35ec49</sys_id>
+        <sys_metadata>1cea0fdf2fa580104b71309cf699b651</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>submit</sys_name>
+        <sys_package display_value="Needit" source="x_393513_needit">5de7ccf6db9b3300d5e21fc76896198e</sys_package>
+        <sys_parent display_value="Incident">fdc157151bc1001049e7404bbc4bcbab</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Needit">5de7ccf6db9b3300d5e21fc76896198e</sys_scope>
+        <sys_scope_delete display_value="">01445cfe2c564aeb800a69ceb0d78fa9</sys_scope_delete>
+        <sys_update_name>sys_script_client_1cea0fdf2fa580104b71309cf699b651</sys_update_name>
+        <sys_update_version display_value="sys_script_client_1cea0fdf2fa580104b71309cf699b651">9c3b03132fe580104b71309cf699b697</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-11 18:22:12</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

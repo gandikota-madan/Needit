@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[function validateComments() {
+
+
+  //Make sure there are comments to submit
+
+
+  var comments = gel("dialog_comments").value;
+
+
+  comments = trim(comments);
+
+
+  if (comments == "") {
+
+
+  //If comments are empty, alert the user and stop submission
+
+
+  alert("Please enter your comments before submitting.");
+
+
+  return false;
+
+
+  }
+	
+  //If there are comments, close the dialog window and submit them
+
+
+  GlideDialogWindow.get().destroy(); //Close the dialog window
+
+
+  g_form.setValue("short_description", comments); //Set the Short Description field with comments in the dialog
+
+
+  g_form.submit();
+
+}]]></client_script>
+        <description>Reason for Reopen</description>
+        <direct>false</direct>
+        <endpoint>x_393513_needit_reopen.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+<section class="textarea_holder">
+
+
+              <p>Please add comments</p>
+
+
+              <textarea rows="4" name="dialog_comments" id="dialog_comments" label="" value="" mandatory="true" class="form-control"/>
+
+
+      </section>
+
+
+  <br></br>
+
+
+  <section class="button_holder">
+
+
+  <button id="closeButton" class="btn btn-primary" type="submit" onclick="return validateComments()">Save</button>
+
+
+  </section>
+</j:jelly>]]></html>
+        <name>reopen</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-11 12:28:04</sys_created_on>
+        <sys_id>288346932fe180104b71309cf699b63a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>reopen</sys_name>
+        <sys_package display_value="Needit" source="x_393513_needit">5de7ccf6db9b3300d5e21fc76896198e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Needit">5de7ccf6db9b3300d5e21fc76896198e</sys_scope>
+        <sys_update_name>sys_ui_page_288346932fe180104b71309cf699b63a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-12 19:09:16</sys_updated_on>
+    </sys_ui_page>
+</record_update>

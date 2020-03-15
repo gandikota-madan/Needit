@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" extends="task" label="Needit" max_length="40" name="x_393513_needit_needit" type="collection">
+    <element audit="true" extends="task" label="Needit" max_length="40" name="x_393513_needit_needit" sizeclass="13" type="collection">
+        <element default="false&#13;&#10;" label="NewRecord" max_length="40" name="newrecord" type="boolean"/>
+        <element label="new field" max_length="100" name="new_field" type="string"/>
         <element label="New field 2" max_length="40" name="new_field_2" type="integer"/>
         <element label="Requested for" mandatory="true" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="1" default="legal" label="Request type" mandatory="true" max_length="40" name="u_request_type" type="string">

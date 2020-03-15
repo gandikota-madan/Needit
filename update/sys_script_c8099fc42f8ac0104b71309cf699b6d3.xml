@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_393513_needit_needit</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>create a new record based on requesttype</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+        if (current.newrecord == true) {
+            gs.addInfoMessage(current.u_request_type);
+
+            // while (gr.next()) {
+            //  while(current.u_request_type == 'hr' ||current.u_request_type == 'legal' ||current.u_request_type == 'your_choice' || current.u_request_type == 'facilities') {
+            //   while (gr.next()==current.u_request_type) {
+            var gr = new GlideRecord("x_393513_needit_needit_child");
+           // gr.parent = current.sys_id;
+           // gr.short_description = current.u_request_type.getDisplayValue();
+           gr.addQuery('short_description',current.u_request_type);
+            gr.query();
+			
+			gs.addInfoMessage(gr.getRowCount());
+				//gr.setLimit(1);
+            if (gr.next()) {
+				gs.addInfoMessage("from if"+gr.short_description);
+                var chilsshort = gr.short_description;
+                var s = current.u_request_type;
+				gs.addInfoMessage("from if"+s);
+                if (chilsshort == s.toLowerCase()) {
+                    //if(gr.s=previous.u_request_type)
+                    //{
+                    gr.description = current.description;
+                    gr.update();
+                } else {
+                    gr.initialize();
+                    gr.parent = current.sys_id;
+                    gr.short_description = current.u_request_type;
+                    gr.description = current.description;
+                    gr.insert();
+                }
+            } else {
+                gr.initialize();
+                gr.parent = current.sys_id;
+                gr.short_description = current.u_request_type;
+                gr.description = current.description;
+                gr.insert();
+            }
+
+
+
+
+
+
+
+
+
+
+            //}
+
+       }
+    }
+    //  }
+
+
+)(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-26 13:24:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c8099fc42f8ac0104b71309cf699b6d3</sys_id>
+        <sys_mod_count>66</sys_mod_count>
+        <sys_name>create a new record based on requesttype</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Needit" source="x_393513_needit">5de7ccf6db9b3300d5e21fc76896198e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Needit">5de7ccf6db9b3300d5e21fc76896198e</sys_scope>
+        <sys_update_name>sys_script_c8099fc42f8ac0104b71309cf699b6d3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-10 09:15:52</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=c8099fc42f8ac0104b71309cf699b6d3"/>
+</record_update>

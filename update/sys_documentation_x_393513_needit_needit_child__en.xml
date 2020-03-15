@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="" label="needit_child" language="en" table="x_393513_needit_needit_child">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>needit_child</label>
+            <language>en</language>
+            <name>x_393513_needit_needit_child</name>
+            <plural>needit_childs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-02 10:15:03</sys_created_on>
+            <sys_id>6728f29a2f8200104b71309cf699b6d9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>needit_child</sys_name>
+            <sys_package display_value="Needit" source="x_393513_needit">5de7ccf6db9b3300d5e21fc76896198e</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Needit">5de7ccf6db9b3300d5e21fc76896198e</sys_scope>
+            <sys_update_name>sys_documentation_x_393513_needit_needit_child__en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-02 10:15:03</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

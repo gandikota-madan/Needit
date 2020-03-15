@@ -3,6 +3,7 @@
         <access>public</access>
         <actions_access>false</actions_access>
         <alter_access>false</alter_access>
+        <caller_access/>
         <client_scripts_access>false</client_scripts_access>
         <configuration_access>false</configuration_access>
         <create_access>false</create_access>
@@ -16,7 +17,8 @@
         <number_ref display_value="NEE">3c588c7edb9b3300d5e21fc768961999</number_ref>
         <provider_class/>
         <read_access>true</read_access>
-        <super_class display_value="Task" name="task">f2601aa6e131330078502406b6333344</super_class>
+        <scriptable_table>false</scriptable_table>
+        <super_class display_value="Task" name="task">760f87951b01001049e7404bbc4bcb89</super_class>
         <sys_class_code/>
         <sys_class_name>sys_db_object</sys_class_name>
         <sys_class_path/>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_393513_needit.BusinessRule</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>BusinessRule</name>
+        <script><![CDATA[var BusinessRule = Class.create();
+BusinessRule.prototype = {
+    initialize: function() {},
+    myFunction: function() {
+gs.addInfoMessage('BusinessRule');
+        if (current.newrecord == true) {
+            gs.addInfoMessage(current.u_request_type);
+
+            // while (gr.next()) {
+            //  while(current.u_request_type == 'hr' ||current.u_request_type == 'legal' ||current.u_request_type == 'your_choice' || current.u_request_type == 'facilities') {
+            //   while (gr.next()==current.u_request_type) {
+            var gr = new GlideRecord("x_393513_needit_needit_child");
+            // gr.parent = current.sys_id;
+            // gr.short_description = current.u_request_type.getDisplayValue();
+            gr.addQuery('short_description', current.u_request_type);
+            gr.query();
+
+            gs.addInfoMessage(gr.getRowCount());
+            //gr.setLimit(1);
+            if (gr.next()) {
+                gs.addInfoMessage("from if" + gr.short_description);
+                var chilsshort = gr.short_description;
+                var s = current.u_request_type;
+                gs.addInfoMessage("from if" + s);
+                if (chilsshort == s.toLowerCase()) {
+                    //if(gr.s=previous.u_request_type)
+                    //{
+                    gr.description = current.description;
+                    gr.update();
+                } else {
+                    gr.initialize();
+                    gr.parent = current.sys_id;
+                    gr.short_description = current.u_request_type;
+                    gr.description = current.description;
+                    gr.insert();
+                }
+            } else {
+                gr.initialize();
+                gr.parent = current.sys_id;
+                gr.short_description = current.u_request_type;
+                gr.description = current.description;
+                gr.insert();
+            }
+
+        }
+        type: 'BusinessRule'
+    }
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-20 07:19:25</sys_created_on>
+        <sys_id>76fb32c02f2200104b71309cf699b624</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>BusinessRule</sys_name>
+        <sys_package display_value="Needit" source="x_393513_needit">5de7ccf6db9b3300d5e21fc76896198e</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Needit">5de7ccf6db9b3300d5e21fc76896198e</sys_scope>
+        <sys_update_name>sys_script_include_76fb32c02f2200104b71309cf699b624</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-20 07:59:26</sys_updated_on>
+    </sys_script_include>
+</record_update>

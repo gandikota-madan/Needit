@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="staging table" max_length="40" name="x_393513_needit_staging_table" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Assigned to" label="Assigned to" max_length="40" name="u_assigned_to" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Assignment batch" label="Assignment batch" max_length="40" name="u_assignment_batch" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Claim ID" label="Claim ID" max_length="40" name="u_claim_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Proerrorqueue" label="Proerrorqueue" max_length="40" name="u_proerrorqueue" type="string"/>
+    </element>
+</database>

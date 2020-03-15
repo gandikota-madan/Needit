@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-06 12:36:24</sys_created_on>
+        <sys_id>517554792fe9c0104b71309cf699b6c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>.x_393513_needit.read_only</sys_name>
+        <sys_package display_value="Needit" source="x_393513_needit">5de7ccf6db9b3300d5e21fc76896198e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Needit">5de7ccf6db9b3300d5e21fc76896198e</sys_scope>
+        <sys_security_acl display_value="">c07518792fe9c0104b71309cf699b612</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_517554792fe9c0104b71309cf699b6c1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-06 12:36:24</sys_updated_on>
+        <sys_user_role display_value="x_393513_needit.read_only" name="x_393513_needit.read_only">175efb252fa9c0104b71309cf699b65b</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Needit">5de7ccf6db9b3300d5e21fc76896198e</application>
+        <file_path/>
+        <instance_id>374dbff4dbe4734042b321c4059619bb</instance_id>
+        <instance_name>dev77944</instance_name>
+        <name>sys_security_acl_role_517554792fe9c0104b71309cf699b6c1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2019-12-06 12:36:24</sys_created_on><sys_id>517554792fe9c0104b71309cf699b6c1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>.x_393513_needit.read_only</sys_name><sys_package display_value="Needit" source="x_393513_needit">5de7ccf6db9b3300d5e21fc76896198e</sys_package><sys_policy/><sys_scope display_value="Needit">5de7ccf6db9b3300d5e21fc76896198e</sys_scope><sys_security_acl display_value="">c07518792fe9c0104b71309cf699b612</sys_security_acl><sys_update_name>sys_security_acl_role_517554792fe9c0104b71309cf699b6c1</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-12-06 12:36:24</sys_updated_on><sys_user_role display_value="x_393513_needit.read_only" name="x_393513_needit.read_only">175efb252fa9c0104b71309cf699b65b</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-95436231</payload_hash>
+        <record_name>.x_393513_needit.read_only</record_name>
+        <reverted_from/>
+        <source>815eb3252fa9c0104b71309cf699b624</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-06 12:36:24</sys_created_on>
+        <sys_id>3a951cb92fe9c0104b71309cf699b64f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16edb36142b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-06 12:36:24</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>72951cb979e9c010deaa9319e5d08a4f</update_guid>
+        <update_guid_history>72951cb979e9c010deaa9319e5d08a4f:-95436231</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value=".x_393513_needit.read_only">715b2cbd2f2dc0104b71309cf699b684</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-06 14:11:22</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>191f806d936a4c408a767b3cd4cd4610</sys_id>
+        <sys_metadata>517554792fe9c0104b71309cf699b6c1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>.x_393513_needit.read_only</sys_name>
+        <sys_package display_value="Needit" source="x_393513_needit">5de7ccf6db9b3300d5e21fc76896198e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Needit">5de7ccf6db9b3300d5e21fc76896198e</sys_scope>
+        <sys_scope_delete display_value="">01445cfe2c564aeb800a69ceb0d78fa9</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_517554792fe9c0104b71309cf699b6c1</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_517554792fe9c0104b71309cf699b6c1">3a951cb92fe9c0104b71309cf699b64f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-06 14:11:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
